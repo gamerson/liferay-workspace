@@ -1,10 +1,15 @@
+allprojects {
+	apply plugin: 'idea'
+	apply plugin: 'eclipse'
+}
+
 //Add extra provided osgi bundles to your installation
 configurations {
 	providedModules
 }
 
 dependencies {
-	providedModules 'org.apache.cxf:cxf-rt-frontend-jaxws:3.1.5'
+	//providedModules 'org.apache.cxf:cxf-rt-frontend-jaxws:3.1.5'
 }
 
 repositories {
